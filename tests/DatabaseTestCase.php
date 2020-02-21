@@ -31,7 +31,7 @@ class DatabaseTestCase extends TestCase
     protected function getEnvironmentSetUp($app): void
     {
         if (is_null(self::$database)) {
-            self::$database = 'laravel_database_encryption_testing_' . str_random(6);
+            self::$database = 'laravel_database_encryption_testing_' . Illuminate\Support\Str::random(6);
         }
 
         $this->setUpDatabase();

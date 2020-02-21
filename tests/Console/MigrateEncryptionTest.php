@@ -33,7 +33,7 @@ class MigrateEncryptionTest extends DatabaseTestCase
         {
             protected function setupKeys()
             {
-                $this->new_key = str_random(32);
+                $this->new_key = Illuminate\Support\Str::random(32);
                 $this->tables  = ['test_models'];
             }
         };
@@ -64,7 +64,7 @@ class MigrateEncryptionTest extends DatabaseTestCase
             protected function setupKeys()
             {
                 $this->old_keys = [app('config')->get('app.key')];
-                $this->new_key  = str_random(32);
+                $this->new_key  = Illuminate\Support\Str::random(32);
             }
         };
 
@@ -81,7 +81,7 @@ class MigrateEncryptionTest extends DatabaseTestCase
             protected function setupKeys()
             {
                 $this->old_keys = [app('config')->get('app.key')];
-                $this->new_key  = str_random(32);
+                $this->new_key  = Illuminate\Support\Str::random(32);
                 $this->tables   = ['test_models'];
             }
         };

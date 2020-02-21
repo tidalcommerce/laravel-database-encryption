@@ -25,7 +25,7 @@ class TestCase extends BaseTestCase
 
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('app.key', str_random(32));
+        $app['config']->set('app.key', Illuminate\Support\Str::random(32));
         $app['config']->set('database-encryption.enabled', true);
     }
 

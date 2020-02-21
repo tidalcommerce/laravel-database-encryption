@@ -32,8 +32,8 @@ class DummyTest extends TestCase
     public function testEncryptNormalString()
     {
         $this->doTest([
-                          'dont_encrypt' => 'dont-encrypt-' . str_random(),
-                          'encrypt_me'   => 'encrypt-me-' . str_random(),
+                          'dont_encrypt' => 'dont-encrypt-' . Illuminate\Support\Str::random(),
+                          'encrypt_me'   => 'encrypt-me-' . Illuminate\Support\Str::random(),
                       ]);
     }
 
@@ -41,7 +41,7 @@ class DummyTest extends TestCase
     {
         $this->doTest([
             'dont_encrypt' => '12345+' . rand(111111, 999999) . '@gmail.com',
-            'encrypt_me'   => 'abcde+' . str_random() . '@gmail.com',
+            'encrypt_me'   => 'abcde+' . Illuminate\Support\Str::random() . '@gmail.com',
         ]);
     }
 
@@ -49,7 +49,7 @@ class DummyTest extends TestCase
     {
         $attributes = [
             'dont_encrypt' => '12345+' . rand(111111, 999999) . '@gmail.com',
-            'encrypt_me'   => 'abcde+' . str_random() . '@gmail.com',
+            'encrypt_me'   => 'abcde+' . Illuminate\Support\Str::random() . '@gmail.com',
         ];
         $model      = new DummyModel($attributes);
 
