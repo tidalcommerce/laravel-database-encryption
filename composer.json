@@ -49,7 +49,6 @@
         "dtisgodsson/elocrypt": "*"
     },
     "conflict": {
-        //"delatbabel/elocryptfive": "*",
         "dtisgodsson/elocrypt": "*"
     },
     "require": {
