@@ -44,12 +44,8 @@
             "role": "Developer"
         }
     ],
-    "replace": {
-        "dtisgodsson/elocrypt": "*"
-    },
-    "conflict": {
-        "dtisgodsson/elocrypt": "*"
-    },
+    "replace": {},
+    "conflict": {},
     "require": {
         "php": ">=7.1.0",
         "laravel/framework": "^7.0|^8.0"
