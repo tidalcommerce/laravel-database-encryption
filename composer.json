@@ -49,7 +49,7 @@
         "dtisgodsson/elocrypt": "*"
     },
     "conflict": {
-        "delatbabel/elocryptfive": "*",
+        //"delatbabel/elocryptfive": "*",
         "dtisgodsson/elocrypt": "*"
     },
     "require": {
